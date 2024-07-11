@@ -1,6 +1,7 @@
 package _00_JButtons_with_Lambdas;
 
 import java.awt.FlowLayout;
+import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,6 +24,8 @@ public class LambdaButtons {
 		
 		window.setVisible(true);
 		window.pack();
+		
+		addNumbers.addMouseListener((MouseListener) this);
 	}
 	
 	public static void main(String[] args) {
